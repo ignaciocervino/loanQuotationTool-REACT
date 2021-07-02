@@ -18,7 +18,8 @@ const Formulario = ({cantidad,guardarCantidad,plazo,guardarPlazo}) => {
         guardarError(false);
 
         //Realizar la cotizacion
-        calcularTotal(cantidad,plazo);
+        const total = calcularTotal(cantidad,plazo);
+        console.log(total);
     }
     return ( 
     <Fragment>
